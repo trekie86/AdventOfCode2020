@@ -13,4 +13,3 @@ if li:
     print(prod(*li))
 else:
     print("None found")
-
