@@ -1,3 +1,5 @@
+"""Advent of Code 2020 day 1 part 2"""
+
 from itertools import combinations
 from math import prod
 

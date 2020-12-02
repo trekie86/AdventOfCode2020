@@ -1,8 +1,10 @@
+"""Advent of Code 2020 day 1 part 1"""
+
 from itertools import combinations
 from math import prod
 
 inputLines = []
-with open("./part1input.txt", "r") as f:
+with open("day1/part1input.txt", "r") as f:
     for line in f:
         inputLines.append(int(line))
 
