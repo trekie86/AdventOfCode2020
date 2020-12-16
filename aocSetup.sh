@@ -4,6 +4,7 @@ if [ -z "$1" ]
 fi
 
 mkdir day$1
+touch day$1/__init__.py
 touch day$1/part_1.py
 touch day$1/part_2.py
 touch day$1/sample.txt
