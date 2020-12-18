@@ -57,36 +57,6 @@ def cycle(grid_map):
                     elif v == INACTIVE and active_neighbors == 3:
                         new_grid_map[(x,y,z,w)] = ACTIVE
 
-    # ##Handle outskirts
-    # outskirt_idx = get_min_max(grid_map)
-    # new_keys = set([])
-    # #Add a new sheet on each new z index
-    # for x in range(outskirt_idx[0][0]+1, outskirt_idx[0][1]):
-    #     for y in range(outskirt_idx[1][0]+1, outskirt_idx[1][1]):
-    #         for z in [outskirt_idx[2][0], outskirt_idx[2][1]+1]:
-    #             new_keys.add((x,y,z))
-    # # print(len(new_keys))
-    # #Add the x ends
-    # for x in [outskirt_idx[0][0], outskirt_idx[0][1]+1]:
-    #     for y in range(outskirt_idx[1][0], outskirt_idx[1][1]+1):
-    #         for z in range(outskirt_idx[2][0], outskirt_idx[2][1]+1):
-    #             new_keys.add((x,y,z))
-    # # print(len(new_keys))
-    # #Add the y ends
-    # for y in [outskirt_idx[1][0], outskirt_idx[1][1]+1]:
-    #     for x in range(outskirt_idx[0][0]+1, outskirt_idx[0][1]):
-    #         for z in range(outskirt_idx[2][0], outskirt_idx[2][1]+1):
-    #             new_keys.add((x,y,z))
-    # # print(len(new_keys))
-    # # for x in [outskirt_idx[0][0], outskirt_idx[0][1]+1]:
-    # #     for y in range(outskirt_idx[1][0], outskirt_idx[1][1]+1):
-    # #         for z in range(outskirt_idx[2][0], outskirt_idx[2][1]+1):
-    # #             new_keys.append((x,y,z))
-    # # print(new_keys)
-    # for key in new_keys:
-    #     if count_active_neighbors(key, grid_map) == 3:
-    #         new_grid_map[key] = ACTIVE
-
     return new_grid_map
 
 def get_min_max(grid_map):
