@@ -3,6 +3,8 @@ if [ -z "$1" ]
     echo "No argument supplied"
 fi
 
+figlet Advent Of Code Day $1
+
 mkdir day$1
 touch day$1/__init__.py
 touch day$1/part_1.py
